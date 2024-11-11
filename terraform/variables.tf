@@ -1,5 +1,5 @@
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
-  description = "Instance type for the infrastructure"
+  default = 45;
+                           description = "Instance type for the infrastructure"
 }
