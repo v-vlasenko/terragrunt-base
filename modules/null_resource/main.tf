@@ -8,3 +8,7 @@ resource "null_resource" "example" {
     command = "echo Hello from ${var.environment}!"
   }
 }
+
+output "ensure_env" {
+  value = "Hello from ${var.environment}!"
+}
