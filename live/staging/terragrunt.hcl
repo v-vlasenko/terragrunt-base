@@ -8,7 +8,7 @@
 #  environment = "staging"
 #}
 
-#CONFIGURATION FOR CREATION AWS S# BUCKET - PROD
+#CONFIGURATION FOR CREATION AWS S# BUCKET - STAGING
 
 terraform {
   source = "../../modules/s3_bucket"
