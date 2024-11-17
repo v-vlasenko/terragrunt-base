@@ -1,6 +1,4 @@
-#include "root" {
-#  path = find_in_parent_folders()
-#}
+#CONFIGURATION FOR SIMPLE NULL RESOURCE - DEV
 
 #terraform {
 #  source = "../../modules/null_resource"
@@ -10,9 +8,7 @@
 #  environment = "dev"
 #}
 
-#include "root" {
-#  path = find_in_parent_folders()
-#}
+#CONFIGURATION FOR CREATION AWS S# BUCKET - DEV
 
 terraform {
   source = "../../modules/s3_bucket"

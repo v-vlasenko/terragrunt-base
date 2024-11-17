@@ -1,11 +1,23 @@
-#include "root" {
-#  path = find_in_parent_folders()
+#CONFIGURATION FOR SIMPLE NULL RESOURCE - STAGING
+
+#terraform {
+#  source = "../../modules/null_resource"
+#}
+#
+#inputs = {
+#  environment = "staging"
 #}
 
+#CONFIGURATION FOR CREATION AWS S# BUCKET - PROD
+
 terraform {
-  source = "../../modules/null_resource"
+  source = "../../modules/s3_bucket"
 }
 
 inputs = {
-  environment = "staging"
+  bucket_name = "staging-my-unique-bucket"
+  versioning  = true
+  encryption  = false
 }
+
+
