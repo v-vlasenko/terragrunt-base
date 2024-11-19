@@ -15,7 +15,7 @@ terraform {
 }
 
 inputs = {
-  bucket_name = "dev-my-unique-bucket"
+  bucket_name = "dev-my-unique-bucketvvvvlad"
   versioning  = false
   encryption  = false
  }
